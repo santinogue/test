@@ -1,0 +1,98 @@
+@import '../../colors.scss';
+
+.item-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-details {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.item-details-content {
+  display: flex;
+  flex-direction: column;
+  width: 78%;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.details {
+  display: flex;
+  width: 100%;
+  padding: 32px 32px 0 32px;
+}
+
+.item-image {
+  width: 680px;
+  min-width: 680px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.item-info {
+  width: calc(100% - 680px - 64px - 32px);
+  margin-left: 32px;
+}
+
+.item-info-condition {
+  font-size: 14px;
+  margin-bottom: 16px
+}
+
+.item-info-title {
+  font-size: 24px;
+  font-weight: 400;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.item-info-price {
+  display: flex;
+  font-size: 46px;
+  padding: 32px 0 32px 0;
+
+  .price {
+    display: flex;
+    width: 76%;
+
+    div {
+      display: flex;
+      align-items: flex-start;
+      font-size: 14px;
+      height: 46px;
+      align-self: flex-end;
+    }
+  }
+}
+
+.buy-button {
+  cursor: pointer;
+  height: 40px;
+  width: 100%;
+  border: none;
+  background-color: $blue;
+  color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.description {
+  padding: 32px;
+}
+
+.description-title {
+  font-size: 28px;
+  margin-bottom: 32px;
+}
+
+.description-info {
+  font-size: 18px;
+}

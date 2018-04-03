@@ -1,0 +1,14 @@
+{
+  "name": "ml",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "node-fetch": "^2.1.2",
+    "password-generator": "^2.2.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}

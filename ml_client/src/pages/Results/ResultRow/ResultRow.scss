@@ -1,0 +1,91 @@
+@import '../../../colors.scss';
+
+.result-row {
+  cursor: pointer;
+  position: relative;
+  height: 180px;
+  padding: 16px 0 16px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 78%;
+
+  &:first-child {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+  }
+
+  &:last-child {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+}
+
+.result-row-data {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.data-col-left {
+  display: flex;
+  align-items: center;
+  flex: 3;
+}
+
+.data-col-right {
+  padding-top: 40px;
+  position: relative;
+  height: 180px;
+  font-size: 12px;
+  justify-content: center;
+  flex: 1;
+  display: flex;
+  color: $gray-1;
+}
+
+.item-img {
+  border-radius: 4px;
+  width: 180px;
+  height: 180px;
+  background-size: initial;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.item-data {
+  padding: 16px 0 0 16px;
+  height: 180px;
+}
+
+.item-data-row-1 {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 32px;
+  font-weight: 300;
+}
+
+.price-decimals {
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+  height: 26px;
+  align-self: flex-end;
+}
+
+.item-data-row-2 {
+  font-size: 18px;
+  width: 332px;
+}
+
+.row-divisor {
+  position: absolute;
+  bottom: 0;
+  height: 1.5px;
+  width: calc(100% - 32px);
+  background-color: $gray-3;
+}
